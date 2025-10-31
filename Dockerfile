@@ -43,7 +43,8 @@ RUN apt-get update \
     xdg-utils \
     chromium-browser \
     --no-install-recommends \
-    && rm -rf /var/lib/apt/lists/*
+    && rm -rf /var/lib/apt/lists/* \
+    && ln -s /usr/bin/chromium /usr/bin/chromium-browser
 
 # Set the working directory inside the container
 WORKDIR /usr/src/app
