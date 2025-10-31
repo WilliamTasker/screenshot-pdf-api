@@ -20,6 +20,7 @@ app.get('/pdf', async (req, res) => {
     // Launch a headless browser instance
     console.log('Launching browser...');
     browser = await puppeteer.launch({
+      executablePath: '/usr/bin/chromium-browser', // Specify the path to the browser
       // These arguments are often needed for running in Docker/cloud environments
       args: ['--no-sandbox', '--disable-setuid-sandbox']
     });
@@ -62,4 +63,3 @@ app.get('/pdf', async (req, res) => {
 app.listen(PORT, () => {
   console.log(`Screenshot API server listening on port ${PORT}`);
 });
-

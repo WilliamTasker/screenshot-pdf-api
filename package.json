@@ -12,6 +12,15 @@
   "license": "ISC",
   "dependencies": {
     "express": "^5.1.0",
-    "puppeteer": "^24.25.0"
-  }
+    "puppeteer": "^24.25.0",
+    "puppeteer-core": "^24.27.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WilliamTasker/screenshot-pdf-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/WilliamTasker/screenshot-pdf-api/issues"
+  },
+  "homepage": "https://github.com/WilliamTasker/screenshot-pdf-api#readme"
 }
