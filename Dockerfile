@@ -41,7 +41,7 @@ RUN apt-get update \
     lsb-release \
     wget \
     xdg-utils \
-    chromium-browser \
+    chromium \
     --no-install-recommends \
     && rm -rf /var/lib/apt/lists/* \
     && ln -s /usr/bin/chromium /usr/bin/chromium-browser
