@@ -44,7 +44,8 @@ RUN apt-get update \
     chromium \
     --no-install-recommends \
     && rm -rf /var/lib/apt/lists/* \
-    && ln -s /usr/bin/chromium /usr/bin/chromium-browser
+    && CHROME_PATH=$(which chromium) \
+    && ln -s ${CHROME_PATH} /usr/bin/chromium-browser
 
 # Set the working directory inside the container
 WORKDIR /usr/src/app
