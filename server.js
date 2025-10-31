@@ -58,8 +58,3 @@ app.get('/pdf', async (req, res) => {
     }
   }
 });
-
-// Start the server and listen for requests
-app.listen(PORT, () => {
-  console.log(`Screenshot API server listening on port ${PORT}`);
-});
